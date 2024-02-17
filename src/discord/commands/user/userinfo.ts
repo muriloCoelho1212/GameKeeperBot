@@ -32,7 +32,7 @@ new Command({
             inline
           },
           {
-            name: "Entrou em:",
+            name: "Entrou no servidor em:",
             value: `${time(member.joinedAt ?? new Date(), "D")}`
           },
           {
