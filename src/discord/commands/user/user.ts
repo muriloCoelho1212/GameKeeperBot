@@ -4,7 +4,7 @@ import { hexToRgb } from "@magicyan/discord";
 import { ApplicationCommandType, EmbedBuilder, time } from "discord.js";
 
 new Command({
-    name: "user",
+    name: "userinfo",
     description: "Suas informações de usuário!",
     dmPermission: false,
     type: ApplicationCommandType.ChatInput,
