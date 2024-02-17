@@ -9,7 +9,7 @@ new Command({
     dmPermission: false,
     type: ApplicationCommandType.ChatInput,
     async run(interaction){
-      const { user } = interaction;
+      const { user, member } = interaction;
 
       const embed = new EmbedBuilder({
         author: {
@@ -30,6 +30,10 @@ new Command({
             name: "Tag",
             value: user.username,
             inline
+          },
+          {
+            name: "Entrou em:",
+            value: `${time(member.joinedAt ?? new Date(), "D")}`
           },
           {
             name: "Perfil criado em:",
